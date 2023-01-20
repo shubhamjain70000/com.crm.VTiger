@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="Suite" parallel="methods">
+
+   <test  name="Test1">
+    <parameter name="BROWSER" value="Edge"></parameter>
+    <classes>
+      <class name="TestNgTestScript.Product_vendor_Test"/>
+      <class name="TestNgTestScript.CreateAndDeleteOrganizationTest"/> 
+    </classes>
+  </test>
+  <test  name="Test2">
+  <parameter name="BROWSER" value="chrome"></parameter>
+    <classes>
+    
+      <class name="TestNgTestScript.Crm_setting_currencies_test"/>
+      <!--class name="TestNgTestScript.CreateOrganizationTest"/-->
+      <!--class name="TestNgTestScript.CreateFaqWithProductAndValidateOnHomePageTest"/-->
+    </classes>
+  </test> <!-- Test -->
+  <!-- Test -->
+</suite> <!-- Suite -->
